@@ -1,0 +1,319 @@
+/* VERSION DESKTOP */
+@font-face {
+    font-family: inter;
+    src: url(../font/Inter-Regular.ttf);
+}
+/* Index */
+
+
+body {
+    background-color: #141112;
+    position: relative;
+    max-width: 100vw;
+}
+
+.bodyPortfolio{ 
+    background-color: #FFFFFF;
+    background-image: url(../img/body-blanco.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100vw;
+}
+
+.bodyIndex {
+    background-image: url(../img/fondo-bodyindex.png);
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100vw;
+}
+
+.bodyPages {
+    background-image: url(../img/body-pages.png);
+    background-repeat: no-repeat;
+    position: relative;
+    max-width: 100vw;
+}
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    background-color:linear-gradient(270deg, #141112 34.12%, rgba(20, 17, 18, 0) 55.03%);;
+}
+
+main {
+    position: relative;
+    padding: 20px;
+    height: 720px;
+}
+
+.main-proyectos {
+    position: relative;
+    padding: 20px;
+    height: 720px;
+    overflow: hidden;
+}
+
+
+/* Nav */
+.nav-enlace {
+    display:inline-block;
+    font-family: inter;
+    font-size: 16px; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6E6E6E;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.nav-enlace:hover {
+    color: #62c5e3;
+    transform: scale(1.15);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-boton {
+    background-color: #141112;
+    padding: 10px;
+    border: 1px solid #141112;
+    display:none;
+    width: 60px;
+}
+
+
+/* Footer */
+.padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    padding: 40px;
+}
+
+
+/* Páginas */
+
+/* Sobre mi */
+.main-padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    background-color: #62c5e3;
+    display:inline-block;
+    position: absolute;
+    font-family: inter;
+    font-size: 24px; 
+    color: #FFFFFF;
+    top: 250px;
+    left:500px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Proyectos */
+/* CARDS */
+
+a {
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.card-group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    display: inline-block;
+    flex-direction: column; 
+}
+.card-header {
+    position: absolute;
+    font-family: inter; 
+    font-size: 35px; 
+    color: #6E6E6E;
+    justify-content: flex-start;
+    align-self:flex-start;
+}
+.card-img {
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card-img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(3px 3px 7px #2A98B9);
+}
+
+.card-footer {
+    position: absolute;
+    font-family: inter; 
+    font-size: 20px; 
+    color: #FFFFFF;
+    justify-content: flex-start;
+    align-self:flex-end;
+}
+
+
+
+
+/* VERSION TABLET */
+
+@media screen and (max-width: 900px)
+{
+    /* BODY */
+    .bodyIndex {
+        max-width: 900px;
+        background-color: #141112;
+        background-image: url(../img/body-index-version900.png);
+        }
+    
+    .bodyPages {
+        max-width: 900px;
+        background-image: url(../img/body-version900.png);
+        }
+
+    /* NAV */
+     nav {
+        flex-direction: column;
+        }
+    .nav-enlace {
+        padding: 10px;
+        background-color: #62c5e3;
+        width: 180px;
+        box-shadow: 3px 3px 7px #2A98B9;
+        color: aliceblue;
+        align-self: flex-end;
+        }
+    
+    .nav-boton {
+        display:inline-block;
+        align-self: flex-end;
+        }
+    
+    .desaparece {
+        display: none;
+        }
+
+    /* Páginas */
+    /* Sobre mi */
+    h2 {
+        display:inline-block;
+        position: absolute;
+        font-family: inter;
+        font-size: 24px; 
+        color: #FFFFFF;
+        background-color: #62c5e3;
+        padding: 10px;
+        top: 400px;
+        left: 268px;
+        text-align: center;
+    }
+
+    /* Proyectos */
+
+    .main-proyectos {
+        position: relative;
+        padding: 20px;
+        height: 720px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .card-group {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .card {
+        margin-bottom: 30px; 
+    }
+
+      
+}
+
+
+
+/* VERSION MOBILE */
+@media screen and (max-width: 400px)
+    {
+    /* BODY */
+    .bodyIndex {
+    max-width: 400px;
+    background-color: #141112;
+    background-image: url(../img/fondo-bodyindex-versionmobile.png);
+    }
+
+    .bodyPages {
+        max-width: 400px;
+        background-image: url(../img/body-pages-version-mobile.png);
+    }
+
+    /* NAV */
+     nav {
+        flex-direction: column;
+    }
+    .nav-enlace {
+        padding: 10px;
+        background-color: #62c5e3;
+        width: 180px;
+        box-shadow: 3px 3px 7px #2A98B9;
+        color: aliceblue;
+    }
+    
+     .nav-boton {
+        display:inline-block;
+        }
+
+
+        .desaparece {
+            display: none;
+        }
+
+     /* Páginas */
+    /* Sobre mi */
+    h2 {
+        display:inline-block;
+        position: absolute;
+        font-family: inter;
+        font-size: 24px; 
+        color: #FFFFFF;
+        background-color: #62c5e3;
+        padding: 10px;
+        text-align: center;
+        top: 400px;
+        left: 70px;
+    }
+
+    /* Proyectos */
+    /* CARDS */
+
+    .main-proyectos {
+        position: relative;
+        padding: 20px;
+        height: 720px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .card-group {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 30px; 
+    }
+    }
+
+    

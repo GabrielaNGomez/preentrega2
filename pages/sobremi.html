@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela Gómez DG</title>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="bodyPages">
+    <header>
+        <nav>
+            <button class="nav-boton" onclick="accion()"><img src="../img/button-index.png" alt="boton-menu-hamburguesa"></button>
+            <a href="../index.html" class="nav-enlace desaparece">Inicio</a>
+            <a href="sobremi.html" class="nav-enlace desaparece">Sobre mi</a>
+            <a href="proyectos.html" class="nav-enlace desaparece">Proyectos</a>
+            <a href="contacto.html" class="nav-enlace desaparece">Contacto</a>
+        </nav>
+    </header>
+
+    <main> 
+       <div class="main-padre">
+        <div>
+        <h2 data-aos="zoom-in" >¡Lo sentimos! <br> Página en proceso </h2>
+        </div>
+        </div>
+    </main>
+ 
+
+    <footer>
+        <div class="padre">
+            <div>
+            <a  href="https://www.linkedin.com/in/gabigomezdg/" target="_blank">
+                <img src="../img/icono-linkedin.png" alt="logoLinkedin"></a>
+            </div>
+            <div>
+            <a href="https://www.behance.net/gabrielangomez" target="_blank"> 
+                <img src="../img/icono-behance.png" alt="logoBehance"></a>
+            </div>
+            <div>
+            <a href="https://www.instagram.com/gabi.gomez_dg/" target="_blank">
+                <img src="../img/icono-instagram.png" alt="logoInstagram"></a>
+            </div>
+            </div>
+     
+    </footer>
+
+<!-- Menu hamburguesa -->
+    <script>
+        function accion(){
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+        </script>
+
+<!-- Animaciones -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
