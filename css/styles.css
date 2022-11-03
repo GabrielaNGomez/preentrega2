@@ -4,8 +4,6 @@
     src: url(../font/Inter-Regular.ttf);
 }
 /* Index */
-
-
 body {
     background-color: #141112;
     position: relative;
@@ -67,8 +65,8 @@ main {
 }
 
 .nav-enlace:hover {
-    color: #62c5e3;
-    transform: scale(1.15);
+    color: #0c7797;
+    transform: scale(1.01);
 }
 
 nav{
@@ -309,6 +307,7 @@ a {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .card {
