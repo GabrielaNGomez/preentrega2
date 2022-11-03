@@ -180,6 +180,12 @@ a {
         background-image: url(../img/body-version900.png);
         }
 
+    .bodyPortfolio {
+        background-color: #FFFFFF;
+        max-width: 900px;
+        background-image: url(../img/body-version900.png);
+        }
+
     /* NAV */
      nav {
         flex-direction: column;
@@ -236,7 +242,6 @@ a {
     .card {
         margin-bottom: 30px; 
     }
-
       
 }
 
@@ -251,6 +256,12 @@ a {
     background-color: #141112;
     background-image: url(../img/fondo-bodyindex-versionmobile.png);
     }
+
+    .bodyPortfolio {
+        background-color: #FFFFFF;
+        max-width: 900px;
+        background-image: url(../img/body-pages-version-mobile.png);
+        }
 
     .bodyPages {
         max-width: 400px;
